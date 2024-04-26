@@ -50,10 +50,10 @@ public class Main {
                 traceBackPath(endPointX, endPointY);
             }
 
-            for (int[] row: obstacleMatrix) {
-                for (int i = 0; i< row.length; i++) {
-                    if (row[i] == 3) {
-                        row[i] = 1;
+            for (int i = 0; i < matrixHeight; i++) {
+                for (int j = 0; j < matrixWidth; j++) {
+                    if (obstacleMatrix[i][j] == 3) {
+                        obstacleMatrix[i][j] = 1;
                     }
                 }
             }
